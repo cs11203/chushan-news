@@ -186,6 +186,9 @@ footer .tel{font-weight:700;color:var(--gold);user-select:all}
 .log-item ul{margin:.25rem 0 0;padding-left:1.2rem}
 .log-ok{font:inherit;margin-top:.75rem;width:100%;min-height:2.75rem;border:0;border-radius:8px;background:var(--purple);color:var(--on-purple);font-weight:700;cursor:pointer}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* 深色模式：紫色文字改金色 */
+:root[data-theme="dark"] .sport-card li b,:root[data-theme="dark"] .dance-h,:root[data-theme="dark"] .closing{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sport-card li b,:root:not([data-theme="light"]) .dance-h,:root:not([data-theme="light"]) .closing{color:var(--gold)}}
 /* 燈箱 */
 dialog{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:96vh;width:100%}
 dialog::backdrop{background:rgba(10,6,18,.88)}
